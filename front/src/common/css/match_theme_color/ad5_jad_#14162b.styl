@@ -1,0 +1,387 @@
+/*解题赛样式*/
+bg_color = #14162b
+panel_bg = #1b1f3c
+light_blue = #3173fd
+rank_border_color=#3c4157
+rank_bg=#14162b
+rank_thead_bg=#1a1e37
+.solving_type{
+  .subject_box{
+    .nav_tabs{
+      background:none!important;
+      border-bottom:1px solid rgba(255,255,255,.2)!important;
+      border-radius 0;
+      border-top:none!important;
+      .tab_item{
+        height:48px!important;
+        color:#abadba!important;
+        .sun_type{
+          font-weight:bold;
+        }
+        .hint-ss{
+          background:#f95d5e!important;
+          right: 12px!important;
+          top: 5px!important;
+          color:#fff!important;
+        }
+      }
+      .active{
+        color:lightblue!important;
+        background:none!important;
+        border-radius 0;
+        border-bottom:4px solid lightblue!important;
+        border-bottom-left-radius 3px;
+        border-bottom-right-radius 3px;
+      }
+    }
+    .sub_content{
+      .sub_card{
+        background:#181b44!important;
+        border:1px solid rgba(255,255,255,.1)!important;
+        border-radius 0;
+        .repr_box li{
+          border: none!important;
+          background: #303258;
+          border-radius: 18px;
+        }
+        .top_line{
+          position:absolute;
+          left:0;
+          top:80px;
+          width:100%;
+          height:1px;
+          background:rgba(255,255,255,.1);
+        }
+        .score_box{
+          .score_title,.score{
+            color:lightblue!important;
+          }
+        }
+        .title-wrap span{
+          color:#fff!important;
+          height:32px;
+          display:inline-block;
+        }
+        .score-wrap{
+          color:#a4a8b3!important;
+        }
+      }
+      .wrap-solved{
+        border:2px solid #01d976!important;
+        box-shadow none!important;
+      }
+    }
+  }
+  .subject_box .btn{
+    background:lightblue!important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border:none;
+  }
+  .subject_box .flag{
+    border-radius 5px;
+  }
+  /*排行榜样式*/
+  .rank_box {
+    //清除表格公共样式
+    background:rgba(21,27,66,.7);
+    .el-table--enable-row-hover .el-table__body tr:hover > td {
+      background: tableHover;
+    }
+
+    .el-table td, .el-table th {
+      padding: 3px 0;
+    }
+
+    .el-table--border, .el-table--group {
+      border: none;
+    }
+
+    .el-table thead.is-group th, .el-table, .el-table__expanded-cell, .el-table th, .el-table tr {
+      background: none;
+    }
+
+    .el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left ~ .el-table__fixed {
+      border-right: 1px solid rank_border_color;
+    }
+
+    .el-table td, .el-table th.is-leaf {
+      border-bottom: 1px solid rank_border_color;
+    }
+
+    .el-table--border th, .el-table__fixed-right-patch, .el-table__expanded-cell, .el-table th {
+      border: none;
+    }
+
+    .el-table .cell, .el-table th div, .el-table--border td:first-child .cell, .el-table--border th:first-child .cell, .el-table .cell, .el-table th div {
+      padding: 0
+      text-align: center;
+    }
+
+    .el-table, .el-table th {
+      color: #fff;
+    }
+
+    .el-table th {
+      padding: 0
+      overflow: visible;
+    }
+
+    .el-table--border::after, .el-table--group::after, .el-table::before {
+      background: none;
+    }
+
+    //  开始自己的样式
+
+    .just_table td{
+      background: none;
+    }
+    .just_table tr td:nth-child(1),
+    .just_table tr td:nth-child(2),
+    .just_table tr td:nth-child(3),
+    .just_table tr td:nth-child(4),
+    .just_table thead .cell {
+      background: none;
+    }
+    .just_table .bor_l1 {
+      border-left: 1px solid rank_border_color;
+    }
+
+    .bor_l, th.bor_l div {
+      border-left: 1px solid rank_border_color;
+    }
+    thead tr:nth-child(1) th:nth-child(5) div.cell,thead tr:nth-child(2) th:nth-child(5) div.cell{
+      border-left-width: 2px!important;
+    }
+    div.sub_type .type_span {
+      transform: skew(-45deg);
+      font-size: 18px;
+    }
+
+    div.sub_name span {
+      font-size: 14px;
+      color: fontColor-f;
+      transform: skew(-45deg, 0deg) rotate(45deg);
+      display: block;
+      width: 100px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+
+    th div.sub_type {
+      transform: skew(45deg) translate(-110px);
+      border-right: 1px solid rank_border_color;
+      border-top: 2px solid rank_border_color;
+      height: 40px
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    th div.sub_name {
+      transform: skew(45deg) translate(-45px);
+      border-right: 1px solid rank_border_color;
+      border-top: 1px solid rank_border_color;
+      height: 90px
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .el-table thead th.th_del {
+      border-top: 1px solid rank_border_color;
+      border-right: 1px solid rank_border_color;
+    }
+
+    div.th_del {
+      border: none;
+      font-size: 14px;
+      height: 35px
+      line-height: 35px;
+    }
+
+    .score {
+      color: tableScore;
+      font-weight: bold;
+    }
+
+    //  设置tbody样式
+
+    .user_name {
+      img {
+        width: 30px
+        height: 30px
+        margin-right: 8px;
+        border-radius: 50%;
+      }
+
+      .marque_box {
+        width: 120px;
+        overflow: hidden;
+        text-align: left;
+
+        .marquee {
+          display: table-cell;
+        }
+      }
+    }
+
+    .rank_logo img {
+      height: 27px
+    }
+
+    .el-dialog__header {
+      border-bottom: none;
+    }
+
+    //分页的样式
+
+    .pagination_box {
+      display flex
+      align-items center
+      justify-content center
+    }
+
+    .el-input__inner {
+      background: rank_bg;
+      border: 1px solid rank_border_color;
+      color: fontColor-f;
+    }
+
+    .el-pagination .btn-next, .el-pagination .btn-prev, .el-pager li {
+      background: none;
+      color: fontColor-f;
+    }
+
+    .el-pager li.active {
+      color: #409EFF;
+    }
+
+    .el-pagination button:disabled {
+      color: #c0c4cc;
+    }
+
+    .el-pagination__jump, .el-pagination__total {
+      color: fontColor-f;
+    }
+
+    .page_info {
+      line-height: 50px;
+      color: fontColor-f;
+      position: absolute
+      top: 0;
+      left: 30px;
+      font-size: 14px;
+    }
+
+    .trend_chart {
+      width: 250px;
+      height: 250px;
+      padding-right: 25px;
+      margin-right: 25px
+    }
+
+    .userDetail {
+      min-height: 250px;
+    }
+
+  }
+  .el-dialog__body .fcenter{
+    border:1px solid rgba(255,255,255,.1);
+  }
+  .rank_box .el-dialog__body{
+    padding:30px 30px;
+  }
+  .rank_box .trend_chart{
+    margin-right:0!important;
+  }
+  .rank_box .el-dialog__body tr th{
+    padding:6px 0;
+  }
+  .userDetail td,.userDetail th .cell{
+    background:none!important;
+  }
+  .userDetail th{
+    //background:rank_bg!important;
+    div{
+      font-weight:bold;
+    }
+  }
+  .top_1_class{
+    width:30px;
+    height:30px;
+    display:inline-block;
+    background:url('~@/assets/img/ad5/jad/1.png') no-repeat!important;
+    background-size: auto auto;
+  }
+  .top_2_class{
+    width:30px;
+    height:30px;
+    display:inline-block;
+    background:url('~@/assets/img/ad5/jad/2.png') no-repeat!important;
+    background-size: auto auto;
+  }
+  .top_3_class{
+    width:30px;
+    height:30px;
+    display:inline-block;
+    background:url('~@/assets/img/ad5/jad/3.png') no-repeat!important;
+    background-size: auto auto;
+  }
+  .pic_qi{
+    background-image:url('~@/assets/img/ad5/jad/qzr.png')!important;
+  }
+  .pic_1{
+    background-image:url('~@/assets/img/ad5/jad/1r.png')!important;
+  }
+  .pic_2{
+    background-image:url('~@/assets/img/ad5/jad/2r.png')!important;
+  }
+  .pic_3{
+    background-image:url('~@/assets/img/ad5/jad/3r.png')!important;
+  }
+  #submitWriteup{
+    border:1px solid #252a56!important;
+    background:#181b44!important;
+  }
+}
+.all_table{
+  .el-table td,.el-table thead .cell{
+    background:rgba(0,0,0,0)!important;
+  }
+  .el-table th.is-leaf{
+    border:1px solid rank_border_color;
+    line-height:36px;
+    border-left:none;
+  }
+  .el-table th.is-leaf:first-child{
+    border-left:1px solid rank_border_color;
+  }
+  .el-table tr td:first-child{
+    border-left:1px solid rank_border_color;
+  }
+}
+@media(max-width:1300px){
+  .rank_box {
+    width:1200px;
+    padding: 30px 30px 80px 30px!important;
+    margin:0 auto;
+  }
+}
+@media(min-width:1300px) and (max-width:1650px){
+  .rank_box {
+    width:1200px;
+    padding: 30px 30px 80px 30px!important;
+    margin:0 auto;
+  }
+}
+@media(min-width:1650px){
+  .rank_box {
+    width:1400px;
+    padding: 30px 30px 80px 30px!important;
+    margin:0 auto;
+  }
+}

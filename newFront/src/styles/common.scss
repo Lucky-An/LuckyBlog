@@ -1,0 +1,50 @@
+// 竞赛内部容器的公共样式
+.app-container{
+  margin-top: 15px;
+  position: relative;
+  padding: 0 200px;
+  .timer{
+    position: absolute;
+    top: -34px;
+    right: 100px;
+  }
+}
+.fcenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*横向滚动的动画*/
+.marquee {
+  animation: marquees 5s infinite;
+  animation-timing-function: linear;
+  display: inline-block;
+
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 32px;
+  line-height: 32px;
+}
+@keyframes marquees {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-25%);
+  }
+}
+
+//非常帅的排行榜样式
+.coolRank{
+  thead tr th{
+    border: none;
+    background:rgba(4,136,245,0.8) ;
+  }
+  td{
+    background: rgba(0,11,52,0.8);
+  }
+  .el-table__body tr:hover>td{
+    background: none;
+  }
+}

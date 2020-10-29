@@ -1,0 +1,223 @@
+
+.my-markdown-body td.te-cell-selected {
+  background-color: #d8dfec
+}
+
+.my-markdown-body td.te-cell-selected::selection {
+  background-color: #d8dfec
+}
+
+.my-markdown-body th.te-cell-selected {
+  background-color: #908f8f
+}
+
+.my-markdown-body th.te-cell-selected::selection {
+  background-color: #908f8f
+}
+.my-markdown-body :not(table) {
+  line-height: 160%;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box
+}
+
+.my-markdown-body address,.my-markdown-body cite,.my-markdown-body dfn,.my-markdown-body em,.my-markdown-body i,.my-markdown-body var {
+  font-style: italic
+}
+
+.my-markdown-body strong {
+  font-weight: 700
+}
+
+.my-markdown-body p {
+  margin: 10px 0;
+  color: #ddd
+}
+
+.my-markdown-body>div>div:first-of-type h1,.my-markdown-body>h1:first-of-type {
+  margin-top: 14px
+}
+
+.my-markdown-body h1,.my-markdown-body h2,.my-markdown-body h3,.my-markdown-body h5 {
+  font-weight: 700
+}
+
+.my-markdown-body h1 {
+  font-size: 1.6rem;
+  line-height: 28px;
+  border-bottom: 3px double #999;
+  margin: 52px 0 15px;
+  padding-bottom: 7px;
+  color: #ddd
+}
+
+.my-markdown-body h2 {
+  font-size: 1.3rem;
+  line-height: 23px;
+  border-bottom: 1px solid #dbdbdb;
+  margin: 30px 0 13px;
+  padding-bottom: 7px;
+  color: #ddd
+}
+
+.my-markdown-body h3,.my-markdown-body h4 {
+  font-size: 1.2rem;
+  line-height: 18px;
+  margin: 20px 0 2px;
+  color: #ddd
+}
+
+.my-markdown-body h5,.my-markdown-body h6 {
+  font-size: 1rem;
+  line-height: 17px;
+  margin: 10px 0 -4px;
+  color: #ddd
+}
+
+.my-markdown-body blockquote {
+  margin: 15px 0;
+  border-left: 4px solid #ddd;
+  padding: 0 15px;
+  color: #777
+}
+
+.my-markdown-body blockquote>:first-child {
+  margin-top: 0
+}
+
+.my-markdown-body blockquote>:last-child {
+  margin-bottom: 0
+}
+
+.my-markdown-body code,.my-markdown-body pre {
+  font-family: Consolas,Courier,"Apple SD \C0B0\B3CC\ACE0\B515   Neo",-apple-system,Lucida Grande,Apple SD Gothic Neo,"\B9D1\C740   \ACE0\B515",Malgun Gothic,Segoe UI,"\B3CB\C6C0",dotum,sans-serif;
+  border: 0;
+  border-radius: 0
+}
+
+.my-markdown-body pre {
+  margin: 2px 0 8px;
+  padding: 18px;
+  background-color: #f5f7f8
+}
+
+.my-markdown-body code {
+  color: #c1788b;
+  padding: 4px 4px 2px 0;
+  letter-spacing: -.3px
+}
+
+.my-markdown-body pre code {
+  padding: 0;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent
+}
+
+.my-markdown-body pre.addon {
+  border: 1px solid #e8ebed;
+  background-color: #fff
+}
+
+.my-markdown-body img {
+  margin: 4px 0 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top;
+  max-width: 100%
+}
+
+.my-markdown-body table {
+  text-align: center;
+  border: 2px solid #213a57;
+  margin: 2px 0 14px;
+  color: #ddd;
+  width: 100%;
+  border-collapse: collapse;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.my-markdown-body table td,.my-markdown-body table th {
+  height: 32px;
+  padding: 15px 14px 5px 6px
+}
+
+.my-markdown-body table td {
+  border: 1px solid #072c4d;
+}
+
+.my-markdown-body table th {
+  border: 1px solid #072c4d;
+  font-weight: 900;
+  color: #ddd;
+}
+
+.my-markdown-body dir,.my-markdown-body menu,.my-markdown-body ol,.my-markdown-body ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 17px;
+  margin: 6px 0 10px;
+  color: #ddd
+}
+
+.my-markdown-body ol {
+  list-style-type: decimal
+}
+
+.my-markdown-body ol ol,.my-markdown-body ol ul,.my-markdown-body ul ol,.my-markdown-body ul ul {
+  margin-top: 0!important;
+  margin-bottom: 0!important
+}
+
+.my-markdown-body ul li {
+  position: relative
+}
+
+.my-markdown-body ul p,ol p {
+  margin: 0
+}
+
+.my-markdown-body pre ul li:before,.my-markdown-body ul li.task-list-item:before {
+  content: ""
+}
+
+.my-markdown-body hr {
+  border-top: 1px solid #eee;
+  margin: 16px 0
+}
+
+.my-markdown-body a {
+  text-decoration: underline;
+  color: #5286bc
+}
+
+.my-markdown-body a:hover {
+  color: #007cff
+}
+
+.my-markdown-body {
+  font-size: 13px;
+  margin: 0;
+  padding: 0
+}
+
+.my-markdown-body .task-list-item {
+  border: 0;
+  list-style: none;
+  padding-left: 22px;
+  margin-left: -22px;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 0 2px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAADdJREFUKBVjvHv37n8GMgALSI+SkhJJWu/du8fARJIOJMWjGpECA505GjjoIYLEB6dVUNojFQAA/1MJUFWet/4AAAAASUVORK5CYII=")
+}
+
+.my-markdown-body .task-list-item.checked {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAMpJREFUKBVjjJ/64D8DGYCJDD1gLbTVyM3OxJDiJMzAxcYIdyALnIWDAdJU7i/OICfCxsDMxMgwc88bwk5F1vTs/W+GFUffwY2H+1FBlI2hLliCQYCbGSyJrqlzwwuGj9//YWoMtRBgUBJnZ6gMEGeQFWaFOw9kE7omkG5GWDyCPF7mJ86gIMbO8P//fwZGRkYGXJpAGuFO/fbrP0PXppcMD179JKgJRSOIA9N8/NZXrM4DqYEBjOgAaYYFOUwRNhruVGyS+MTI1ggAx8NTGcUtFVQAAAAASUVORK5CYII=")
+}
+
+.my-markdown-body .task-list-item .task-list-item-checkbox,.my-markdown-body .task-list-item input[type=checkbox] {
+  margin-left: -17px;
+  margin-right: 3.8px;
+  margin-top: 3px
+}
